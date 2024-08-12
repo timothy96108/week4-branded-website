@@ -1,0 +1,17 @@
+// background cover
+.bg-cover {
+  background-size: cover;
+  background-position: center;
+}
+
+// text hidden
+.text-hidden {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+// image cover
+.object-fit-cover {
+  object-fit: cover;
+}

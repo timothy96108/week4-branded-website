@@ -1,0 +1,52 @@
+@each $key, $value in $grid-breakpoints {
+  @if not $value {
+    @each $prop in $property {
+      @each $side in $sides {
+        @each $spacerKey, $spacerValue in $spacers {
+          .#{$prop}#{$side}-#{$spacerKey} {
+            @include generate($prop, $side, $spacerValue);
+          }
+        }
+      }
+    }
+  } @else {
+    @media (min-width: $value) {
+      @each $prop in $property {
+        @each $side in $sides {
+          @each $spacerKey, $spacerValue in $spacers {
+            .#{$prop}#{$side}-#{$key}-#{$spacerKey} {
+              @include generate($prop, $side, $spacerValue);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// negative
+.mx-n3 {
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+}
+
+// gap
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+@include mobile {
+  .gap-sm-6 {
+    gap: 1.5rem;
+  }
+}
+
+@include desktop {
+  .gap-lg-0 {
+    gap: 0;
+  }
+}

@@ -1,0 +1,31 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -($gutter-width * 0.5);
+  margin-right: -($gutter-width * 0.5);
+
+  & > * {
+    width: 100%;
+    max-width: 100%;
+    padding-left: $gutter-width * 0.5;
+    padding-right: $gutter-width * 0.5;
+  }
+}
+
+@each $key, $value in $grid-breakpoints {
+  @if not $value {
+    @for $i from 1 through $grid-columns {
+      .col-#{$i} {
+        width: 100% * calc($i / $grid-columns);
+      }
+    }
+  } @else {
+    @media (min-width: $value) {
+      @for $i from 1 through $grid-columns {
+        .col-#{$key}-#{$i} {
+          width: 100% * calc($i / $grid-columns);
+        }
+      }
+    }
+  }
+}

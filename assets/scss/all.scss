@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+// helpers
+@import './helpers/variables';
+@import './helpers/mixins';
+
+// base
+@import './base/reset';
+@import './base/base';
+
+// utilities
+@import './utilities/typography';
+@import './utilities/colors';
+@import './utilities/layout';
+@import './utilities/grid';
+@import './utilities/spacing';
+@import './utilities/display';
+@import './utilities/border';
+
+// layout
+@import './layout/header.scss';
+@import './layout/footer.scss';
+
+// pages
+@import './pages/index.scss';

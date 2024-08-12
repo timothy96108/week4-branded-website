@@ -1,0 +1,117 @@
+// heading
+.h1 {
+  font-size: 4rem;
+}
+
+.h2 {
+  font-size: 3rem;
+}
+
+.h3 {
+  font-size: 2.5rem;
+}
+
+.h4 {
+  font-size: 2rem;
+}
+
+.h5 {
+  font-size: 1.5rem;
+}
+
+.h6 {
+  font-size: 1.25em;
+}
+
+// font size
+.fs-1 {
+  font-size: 2.5rem;
+}
+
+.fs-2 {
+  font-size: 2.25rem;
+}
+
+.fs-3 {
+  font-size: 2rem;
+}
+
+.fs-4 {
+  font-size: 1.75rem;
+}
+
+.fs-5 {
+  font-size: 1.5rem;
+}
+
+.fs-6 {
+  font-size: 1.25rem;
+}
+
+@include tablet {
+  // heading
+  .h1 {
+    font-size: calc(1.375rem + 1.5vw);
+  }
+
+  .h2 {
+    font-size: calc(1.325rem + 0.9vw);
+  }
+
+  .h3 {
+    font-size: calc(1.3rem + 0.6vw);
+  }
+
+  .h4 {
+    font-size: calc(1.275rem + 0.3vw);
+  }
+
+  // font size
+  .fs-1 {
+    font-size: calc(1.375rem + 1.5vw);
+  }
+
+  .fs-2 {
+    font-size: calc(1.325rem + 0.9vw);
+  }
+
+  .fs-3 {
+    font-size: calc(1.3rem + 0.6vw);
+  }
+
+  .fs-4 {
+    font-size: calc(1.275rem + 0.3vw);
+  }
+}
+
+// font weight
+.fw-regular {
+  font-weight: 500;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.fw-black {
+  font-weight: 900;
+}
+
+// font style
+.fst-italic {
+  font-style: italic;
+}
+
+// text align
+.text-end {
+  text-align: end;
+}
+
+.text-center {
+  text-align: center;
+}
+
+// line break
+.line-break {
+  white-space: pre-line;
+}

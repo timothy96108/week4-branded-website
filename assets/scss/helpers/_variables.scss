@@ -1,0 +1,41 @@
+// color
+$primary: #650300;
+$secondary: #aa0601;
+$light: #fbf2f2;
+$white: #ffffff;
+$dark: #000000;
+
+// grid system
+$gutter-width: 1.5rem;
+$grid-columns: 12;
+$grid-breakpoints: (
+  '': false,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+);
+
+// spacing
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer * 0.75,
+  4: $spacer * 1,
+  5: $spacer * 1.25,
+  6: $spacer * 1.5,
+  7: $spacer * 1.75,
+  8: $spacer * 2,
+  9: $spacer * 2.25,
+  10: $spacer * 2.5,
+  12: $spacer * 3,
+  16: $spacer * 4,
+  20: $spacer * 5,
+  24: $spacer * 6,
+  auto: auto,
+);
+
+$property: 'm', 'p';
+$sides: '', 't', 'b', 's', 'e', 'x', 'y';

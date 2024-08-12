@@ -1,0 +1,88 @@
+// breakpoints
+@mixin mobile {
+  @media (max-width: 575.98px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 767.98px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: 991.98px) {
+    @content;
+  }
+}
+
+@mixin desktop-lg {
+  @media (max-width: 1199.98px) {
+    @content;
+  }
+}
+
+// generate spacing
+@mixin generate($prop, $side, $spacerValue) {
+  @if $side == '' {
+    @if $prop == 'm' {
+      margin: $spacerValue;
+    }
+    @if $prop == 'p' {
+      padding: $spacerValue;
+    }
+  }
+  @if $side == 't' {
+    @if $prop == 'm' {
+      margin-top: $spacerValue;
+    }
+    @if $prop == 'p' {
+      padding-top: $spacerValue;
+    }
+  }
+  @if $side == 'b' {
+    @if $prop == 'm' {
+      margin-bottom: $spacerValue;
+    }
+    @if $prop == 'p' {
+      padding-bottom: $spacerValue;
+    }
+  }
+  @if $side == 's' {
+    @if $prop == 'm' {
+      margin-left: $spacerValue;
+    }
+    @if $prop == 'p' {
+      padding-left: $spacerValue;
+    }
+  }
+  @if $side == 'e' {
+    @if $prop == 'm' {
+      margin-right: $spacerValue;
+    }
+    @if $prop == 'p' {
+      padding-right: $spacerValue;
+    }
+  }
+  @if $side == 'x' {
+    @if $prop == 'm' {
+      margin-left: $spacerValue;
+      margin-right: $spacerValue;
+    }
+    @if $prop == 'p' {
+      padding-left: $spacerValue;
+      padding-right: $spacerValue;
+    }
+  }
+  @if $side == 'y' {
+    @if $prop == 'm' {
+      margin-top: $spacerValue;
+      margin-bottom: $spacerValue;
+    }
+    @if $prop == 'p' {
+      padding-top: $spacerValue;
+      padding-bottom: $spacerValue;
+    }
+  }
+}
