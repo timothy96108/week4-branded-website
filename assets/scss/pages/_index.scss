@@ -29,7 +29,25 @@
   width: 100px;
 }
 
-// classic 
-.classic-title {
+// classic
+.classic-title,
+.branded-title {
   font-size: 3rem;
+}
+
+/* branded */
+.branded {
+  background-image: url('/assets/images/branded-bg.png');
+}
+
+@include desktop {
+  .branded {
+    background-image: url('/assets/images/branded-bg-md.png');
+  }
+}
+
+@include mobile {
+  .branded {
+    background-image: url('/assets/images/branded-bg-sm.png');
+  }
 }
