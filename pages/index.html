@@ -108,7 +108,7 @@
               </div>
               <div class="card-body d-flex flex-column p-4">
                 <p class="fw-bold mb-2">Jessy</p>
-                <p>
+                <p class="fw-regular">
                   眼鏡品質優良，下次還會想來這邊購買！
                 </p>
                 <time datetime="2021-06-20" class="comment-time mt-auto">2021/06/20</time>
@@ -122,7 +122,7 @@
               </div>
               <div class="card-body d-flex flex-column p-4">
                 <p class="fw-bold mb-2">凱倫</p>
-                <p>
+                <p class="fw-regular">
                   做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！
                 </p>
                 <time datetime="2021-04-18" class="comment-time mt-auto">2021/04/18</time>
@@ -136,7 +136,7 @@
               </div>
               <div class="card-body d-flex flex-column p-4">
                 <p class="fw-bold mb-2">悠悠</p>
-                <p>
+                <p class="fw-regular">
                   謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！
                 </p>
                 <time datetime="2020-12-25" class="comment-time mt-auto">2020/12/25</time>
@@ -150,7 +150,7 @@
               </div>
               <div class="card-body d-flex flex-column p-4">
                 <p class="fw-bold mb-2">Kyuan</p>
-                <p>
+                <p class="fw-regular">
                   服務很好，品質沒有任何問題，非常喜歡。
                 </p>
                 <time datetime="2020-10-31" class="comment-time mt-auto">2020/10/31</time>
@@ -158,6 +158,40 @@
             </div>
           </li>
         </ul>
+      </section>
+
+      <!-- contact -->
+      <section class="contact bg-light py-10 py-sm-20">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-10 col-lg-6">
+              <h2 class="h2 text-primary fw-bold text-center mb-6 mb-lg-12">顧客推薦</h2>
+              <p class="fw-regular mb-6">
+                我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。
+              </p>
+              <form action="./index.html" method="post">
+                <label for="name" class="d-block mb-2">姓名</label>
+                <input type="text" name="name" id="name" placeholder="陳小明" class="form-field d-block w-100 mb-4">
+                <label for="phone" class="d-block mb-2">聯絡電話</label>
+                <input type="tel" name="phone" id="phone" placeholder="0912-345-678"
+                  class="form-field d-block w-100 mb-4">
+                <label for="email" class="d-block mb-2">電子郵件</label>
+                <input type="email" name="email" id="email" placeholder="example@email.com"
+                  class="form-field d-block w-100 mb-4">
+                <label for="recommend" class="d-block mb-2">意見反應</label>
+                <textarea rows="5" name="recommend" id="recommend" placeholder="請輸入您的意見"
+                  class="form-field d-block w-100 mb-4"></textarea>
+                <div class="d-flex mb-6 mb-sm-12">
+                  <input type="checkbox" name="accept-privacy" id="accept-privacy" class="form-check d-block">
+                  <label for="accept-privacy" class="fw-regular">
+                    我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。
+                  </label>
+                </div>
+                <button type="submit" class="form-submit d-block fw-bold text-white bg-secondary mx-auto">確認送出</button>
+              </form>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
