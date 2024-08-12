@@ -35,7 +35,7 @@
   font-size: 3rem;
 }
 
-/* branded */
+// branded
 .branded {
   background-image: url('/assets/images/branded-bg.png');
 }
@@ -49,5 +49,22 @@
 @include mobile {
   .branded {
     background-image: url('/assets/images/branded-bg-sm.png');
+  }
+}
+
+// comment
+.comment {
+  .card {
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    box-shadow: 0px 2px 6px #00000029;
+
+    &-body {
+      height: 205px;
+    }
+  }
+
+  &-time {
+    color: #707070;
   }
 }
