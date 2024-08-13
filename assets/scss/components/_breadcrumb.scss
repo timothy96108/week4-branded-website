@@ -1,0 +1,17 @@
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.breadcrumb-item {
+  + .breadcrumb-item::before {
+    content: '/';
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    color: #6c757d;
+  }
+
+  a:hover {
+    color: $secondary;
+  }
+}

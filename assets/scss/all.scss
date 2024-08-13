@@ -23,6 +23,7 @@
 
 // components
 @import './components/pagination';
+@import './components/breadcrumb';
 
 // pages
 @import './pages/index';
@@ -30,3 +31,4 @@
 @import './pages/store';
 @import './pages/location';
 @import './pages/blog';
+@import './pages/article';
