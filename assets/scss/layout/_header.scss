@@ -12,6 +12,14 @@
   .nav-list {
     gap: 2rem;
     margin-right: -0.75rem;
+
+    @include desktop {
+      gap: 1rem;
+    }
+
+    @include tablet {
+      gap: 0;
+    }
   }
 
   .nav-link {
@@ -19,22 +27,6 @@
     font-size: 1.25rem;
     &:hover {
       color: rgba(255, 255, 255, 0.75);
-    }
-  }
-}
-
-@include desktop {
-  .header {
-    .nav-list {
-      gap: 1rem;
-    }
-  }
-}
-
-@include tablet {
-  .header {
-    .nav-list {
-      gap: 0;
     }
   }
 }
