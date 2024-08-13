@@ -1,0 +1,11 @@
+.map-frame {
+  height: 100%;
+
+  @include desktop {
+    height: 414px;
+  }
+
+  @include mobile {
+    height: 208px;
+  }
+}
