@@ -1,0 +1,7 @@
+.store-detail {
+  transition: 0.3s;
+
+  &:hover {
+    background: $secondary;
+  }
+}
