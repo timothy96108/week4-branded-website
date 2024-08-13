@@ -1,0 +1,60 @@
+// nav
+.product {
+  .nav-item {
+    border: 1px solid #dcdcdc;
+  }
+
+  .nav-link {
+    font-size: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.5rem solid transparent;
+
+    @include desktop {
+      font-size: 1.5rem;
+      padding-top: 1rem;
+      padding-bottom: 0.5rem;
+    }
+
+    @include mobile {
+      font-size: 1rem;
+    }
+  
+    &:hover {
+      border-bottom: 0.5rem solid $secondary;
+    }
+  }
+}
+
+// product list
+.product {
+  .card {
+    &-link {
+      overflow: hidden;
+    }
+    
+    &-img {
+      transition: 0.3s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.color {
+  &-block {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 0.25rem;
+  }
+
+  &-bark {
+    background: #5f3e2d;
+  }
+
+  &-bronze {
+    background: #b75929;
+  }
+}
